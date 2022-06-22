@@ -28,6 +28,9 @@ Scaling 변수의 분산, 편차 변경 / 규모 차이 sklearn.preprocessing
         feature를 지정된 범위로 확장 [0,1]
         왜곡, 이상치 있으면 손상
    - Robust    (X - X.median) / IQR
+   
+fit / fit_transform   
+같은 기준으로 transform : train에만 fit / train + test 합쳐서 fit 
          
 Transform 새로운 feature로 
 Binning 연속형 → 범주형
@@ -42,6 +45,10 @@ Numerical   - Discrete 유한
 결측치, 이상치
 희소값
 
+describe().style.background_gradient()
+짱
 
+sns.countplot(data=train, y="Neighborhood", order=train["Neighborhood"].value_counts().index)
+짱!
 
 
