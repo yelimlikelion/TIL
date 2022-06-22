@@ -1,0 +1,47 @@
+  회귀 알고리즘 평가지표
+MAE, MSE 큰 수치의 오차 쪽으로 편향이 생김
+→log를 취해 한 쪽으로 치우친 분포를 정규분포에 가깝게 만들어 준다 : RMSLE
+log1p ⇆ expm1
+
+  학습, 예측 데이터셋 만들기
+log(label_name)으로 RMSE가 RMSLE가 된다
+
+Grid Search VS Random Search (회귀 모델)
+Grid : hyper parameter의 모든 조합으로 탐색
+Random : random한 조합으로 iteration 수만큼 탐색
+
+RandomizedSearchCV
+param_distributions : n_estimators(tree 수), max_depth
+
+신호와 소음 잘 구분하기
+month와 year-month
+
+  Feature Engineering
+EDA → idea 
+Feature Selection 신호/소음
+Feature Extraction 비정형 데이터
+Scaling 변수의 분산, 편차 변경 / 규모 차이 sklearn.preprocessing
+   - Z-score  (X - X.mean())/std
+        평균 제거, 데이터를 단위 분산에 맞게 조정
+        표준정규분포 / 왜곡, 이상치 있으면 손상
+   - Min-Max   (X - X.min) / X.max - X.min
+        feature를 지정된 범위로 확장 [0,1]
+        왜곡, 이상치 있으면 손상
+   - Robust    (X - X.median) / IQR
+         
+Transform 새로운 feature로 
+Binning 연속형 → 범주형
+Dummy 범주형 → 연속형
+
+  Feature의 종류
+Categorical - Nominal 여러 가지, 순서X
+            - Ordinal 여러 가지, 순서O (month, year)
+Numerical   - Discrete 유한
+            - Continuous 무한
+            
+결측치, 이상치
+희소값
+
+
+
+
