@@ -30,7 +30,7 @@ Scaling 변수의 분산, 편차 변경 / 규모 차이 sklearn.preprocessing
    - Robust    (X - X.median) / IQR
    
 fit / fit_transform   
-같은 기준으로 transform : train에만 fit / train + test 합쳐서 fit 
+같은 기준으로 transform : ✔︎train에만 fit / ? train + test 합쳐서 fit 
          
 Transform 새로운 feature로 
 Binning 연속형 → 범주형
