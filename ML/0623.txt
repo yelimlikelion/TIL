@@ -1,0 +1,42 @@
+명령형 인터페이스
+if __name__ == '__main__':
+  pass
+모듈로 실행될 때
+
+테스트 자동화와 TDD
+pytest-watch
+  어쩌구_test.py
+  def test_어쩌구()
+TDD
+  의사결정과 피드백 사이의 간극을 인식하고 제어
+  구현, 명세, 설계 행위
+  녹색 상태(passed)를 유지, 중복이 없고, 의도가 드러나게
+  ✔︎ 중복을 없애기 위해 중복을 드러내기
+  Do the simplest thing that could possibly work
+  
+Kebab case hello-world
+Snake case hello_world
+Camel case helloWorld
+Pasal case HelloWorld
+pascalize('hello_world')→'HelloWorld'
+
+  단위 테스팅
+  정규표현식
+  
+designing and engineering time
+변수 대입이 적어야?
+map(f, [])
+뭐야 F2누르면 변수 이름을 바꿔줄 수 있대
+왜 아무도 안 알려준거야
+
+  정규표현식
+언어를 정의하는 언어
+  - 유한한 개수의 알파벳
+  - 알파벳이 어떻게 나열되어야 적합한 문장인지를 정의하는 규칙들
+  
+https://extendsclass.com/regex-tester.html#python
+
+
+
+
+
