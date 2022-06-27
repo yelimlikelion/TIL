@@ -1,0 +1,50 @@
+pd.read_csv("", index_col="Id")
+
+feature engineering
+과적합 방지
+
+fit_transform : train
+transform : train, test
+
+standard scaler    minmax scaler     robust sclaer
+std = 1           min = 0            표준화 후 동일한 값을 더 넓게 분포 시키고 있음
+mean = 0          max = 1            median이 0 →　+, - 절반
+                                     아웃라이어 영향 최소화
+scale 전후 분포는 동일, x값만 달라짐
+
+log transform
+표준정규분포 형태로 → 일반적인 예측 성능↑
+
+  이산화(discretisation)
+구간으로 grouping
+  Equal width binning       동일 길이로 나누기 cut
+  Equal frequency binning   동일 개수로 나누기 qcut
+
+fig, axes = plt.subplots(1, 2)
+(figure, AxesSubplot)
+
+  Encoding
+Categorigal Feature → Numerical Feature
+- Ordinal : 비교 쉬움, 메모리 적음 vs 순서에 의미가 생길 수 있음
+   train["col"].astype("category").cat.codes
+   OrdinalEncoder().fit(train[["col"]]).transform(train[["col"]])
+- One-Hot : 메모리 많이 차지, 오래 걸림
+  pd.get_dummies(train["col"])
+  train[ohe.categories_[0]] = OneHotEncoder().fit(train[["col"]]).transform(train[["col"]]).toarray()
+
+  파생 변수
+  다항식 전개에 기반한 파생변수
+    feature[a, b]에서 최대 차수가 2일 때
+    1, a, b, ab, a² b² → uniform, 범위가 너무 작아 특징 찾기 어려운 값에서 사용
+  PolynomialFeatures(degree=2).fit_transform(train[["col1", "col2"]])
+  pd.DataFrame(pf_val, columns=pf.get_feature_names_out())
+
+  변수 선택
+  ✔︎ 상관이 높은 두 변수 → 하나만
+  ✔︎ 분산 기반 선택 ... 값이 대부분 하나의 값이면 채택✕
+
+
+
+
+
+
