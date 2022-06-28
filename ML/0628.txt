@@ -1,0 +1,47 @@
+mode() 최빈값
+
+Gradient Boosting Tree
+  Boosting
+  여러 얕은 트리를 연결하여 편향과 분산을 줄여 강력한 트리 생성
+  이전 트리에서 틀렸던 부분에 가중치를 두고 지속적 학습
+  
+  Gradient 기울기 
+  오차 측정을 미분값(기울기)로
+  MSE 사용, 이상치 있을 때.. hubber loss
+  
+  Gradient Boosting Tree
+  loss : 최적화할 손실함수 (squared_error)
+  learning_rate : 너무 크면 빠르지만 정확도 떨어짐
+                  너무 작아도 느리고 ...극값에 빠질 수도? 
+  n_estimators : boosting 단계 클수록 정확하다
+  subsample
+    
+  bagging                vs         boosting
+  random sampling                   이전 트리 -> 틀렸던 부분
+  parallel                          sequencial
+  편향 유지, 분산 감소                  편향, 분산 감소
+  tree 비상관화
+  Extra Tree, Random Forest         Gradient Boosting Tree, XGBoost, lightgbm, CatBoost
+
+  over fitting에서 더 좋은 성능 내기도    개별 트리 성능 낮을 때 
+  
+  Gradient Boosting Machine
+  균형 트리 분할 방식 : 균형잡힌 트리 → 깊이 최소화 vs 시간이 오래 걸림
+  XGBoost : 손실 함수를 최대한 감소, 빠르다, 과적합 규제 vs 느리고.. Over fitting
+          과적합 방지 : ↑ ✔︎n_estimators, min_child_weight, gamma
+                     ↓ ✔︎learning rate, ✔︎max_depth, subsample, colsamply_bytree
+  LightGBM : XGBoost와 비교해 정확도 유지, 시간 단축
+             범주형 변수
+             Gradient-based One-side Sampling
+
+머신러닝 ~ 제조업
+품질 관리, 예방 정비, 수요 예측, 프로세싱 조건, 연구 개발, 스마트 제품
+  
+선형 회귀 
+  독립변수와 종속변수간의 선형 상관관계
+  이름은 rogistic regression이지만 분류에 가깝다
+ 
+
+
+  
+  
