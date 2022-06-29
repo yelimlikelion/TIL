@@ -10,7 +10,7 @@ Gradient Boosting Tree
   MSE 사용, 이상치 있을 때.. huber loss
   
   Gradient Boosting Tree
-  loss : 최적화할 손실함수 (squared_error)
+  loss : 최적화할 손실함수 (squared loss)
   learning_rate : 너무 크면 빠르지만 정확도 떨어짐
                   너무 작아도 느리고 ...극값에 빠질 수도? 
   n_estimators : boosting 단계 클수록 정확하다
