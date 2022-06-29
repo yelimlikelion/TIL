@@ -7,7 +7,7 @@ Gradient Boosting Tree
   
   Gradient 기울기 
   오차 측정을 미분값(기울기)로
-  MSE 사용, 이상치 있을 때.. hubber loss
+  MSE 사용, 이상치 있을 때.. huber loss
   
   Gradient Boosting Tree
   loss : 최적화할 손실함수 (squared_error)
