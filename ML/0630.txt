@@ -1,0 +1,37 @@
+try:
+
+except ValueError:
+  raise ValueError()
+
+의도한 곳에서 오류가 발생?
+
+(\s|,\s?)
+space / comma+space / comma
+
+file이란 무엇인가....
+  정보를 disc에 저장하는 단위
+disc란 무엇인가..
+  저장장치 중 하나..
+RAM이란 무엇인가..
+  Random access memory 
+ROM이란 무엇인가..
+  Read-Only memory
+  컴퓨터가 만들어질 때.. data..
+  기록할 수 없음
+DB
+  원격...
+  
+with file open as f
+파일을 열었다가 닫는 번거로움을 줄인다..
+  
+입출력 전환
+python recomm.py < test.txt > output.txt
+
+파이프
+python recomm.py | python recomm.py
+
+
+
+
+
+
