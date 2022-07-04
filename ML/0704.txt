@@ -60,3 +60,13 @@ MNIST 손글씨 분류
 
 sparse_categorical_crossentropy   label 정수형태
 categorical_crossentropy          label이 one-hot vector
+
+origin = dataset.pop('Origin')
+dataset['USA'] = (origin == 1)*1.0
+dataset['Europe'] = (origin == 2)*1.0
+dataset['Japan'] = (origin == 3)*1.0
+짱이다..
+
+RMSprop = learning_rate 적당..해야..
+
+
